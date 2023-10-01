@@ -4,7 +4,7 @@ body {
 }
 
 main::after {
-    content: "Oi";
+    content: "";
     position: fixed;
     top: 0;
     left: 0;
@@ -21,6 +21,16 @@ main .personagem {
 
 main .personagem.selecionado {
     display: block;
+    animation: opacity 1s ease-in-out;
+}
+
+@keyframes opacity {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 main .personagem .imagem {
@@ -47,12 +57,15 @@ main .personagem .imagem {
     font-family: "secular one";
     font-weight: 400;
     margin-bottom: 20px;
+    filter: drop-shadow(3px 3px 3px rgba(255, 255, 0, 0.639));
 }
 
 .conteudo .descricao {
     color: aliceblue;
-    font-family: "rubik";
-    line-height: 24px;
+    font-family: "script";
+    font-size: 20px;
+    line-height: 22px;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.637));
 }
 
 .conteudo .logo {
@@ -61,6 +74,7 @@ main .personagem .imagem {
     height: 100px;
     width: 230px;
     margin-bottom: cover;
+    filter: drop-shadow(3px 3px 3px rgba(255, 255, 0, 0.648));
 }
 
 .botoes {
@@ -75,6 +89,17 @@ main .personagem .imagem {
     align-items: center;
     gap: 10px;
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+        filter: brightness(100%);
+    }
+    100%{
+        transform: scale(1.1);
+        filter: brightness(110%);
+    }
 }
 
 .botoes .botao {
@@ -92,4 +117,5 @@ main .personagem .imagem {
     transform: scale(1.2);
     box-shadow: 0 0 20px #d9d9d9;
     border-radius: 50%;
+    animation: pulse 0.6s infinite alternate;
 }
