@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest&family=Rubik&display=swap" rel="stylesheet">
+    <link href="./src/css/style.css" rel="stylesheet" />
+    <link href="./src/css/reset.css" rel="stylesheet" />
+    <link href="./src/css/responsive.css" rel="stylesheet" />
+    <link href="./src/js/script.js" rel="scriptsheet" />
+
+    <title>Jujutsu Kaisen</title>
+</head>
+
+<body>
+
+    <main class="personagens">
+        <div class="personagem selecionado">
+            <img class="imagem" src="./src/imagens/jujutsu-kaisen.jpg" alt="Jujutsu Kaisen"/>
+            <div class="conteudo">
+                <i class="logo"></i>
+                <p class="descricao">
+                    Jujutsu Kaisen é um mangá japonês escrito e ilustrado por Gege Akutami, serializado na Weekly Shōnen Jump desde 5 de março de 2018. Os capítulos individuais são compilados em volume tankōbon, e publicados pela Shueisha desde julho de 2018. A série é licenciada e publicada no Brasil pela editora Panini.
+                </p>
+            </div>
+        </div>
+
+        <div class="personagem">
+            <img class="imagem" src="./src/imagens/personagem-yuji-itadori.jpg" alt="Personagem Yuji Itadori"/>
+            <div class="conteudo">
+                <i class="logo"></i>
+                <h2 class="nome-personagem">Yuji Itadori</h2>
+                <p class="descricao">Apresentado como o protagonista da obra, Itadori Yuuji é um jovem estudante
+                    do ensino médio que vivia uma vida normal com o seu avô — o único parente que ele conhecia — e os
+                    colegas do clube de ocultismo da sua escola.
+                    Durante uma das aventuras do seu clube até um pequeno depósito, Yuuji encontrou um item que carregou
+                    consigo sem saber o que era, porém, um dia, após a morte do seu avô, Itadori recebeu a visita de um
+                    jovem desconhecido chamado Fushiguro Megumi, avisando-o que o objeto que ele tinha em mãos era, na
+                    verdade, um amuleto amaldiçoado.</p>
+            </div>
+        </div>
+
+        <div class="personagem">
+            <img class="imagem" src="./src/imagens/personagem-megumi-fushiguro.jpg" alt="Personagem Megumi Fushiguro"/>
+            <div class="conteudo">
+                <i class="logo"></i>
+                <h2 class="nome-personagem">Megumi Fushiguro</h2>
+                <p class="descricao">Megumi Fushiguro é um estudante do primeiro ano na Tokyo Jujutsu Highe,
+                    também descendente da família Zenin. Megumi deseja ajudar a proteger as pessoas que ele vê como boas
+                    ou gentis. Ele acredita que o mundo é injusto e que um feiticeiro é uma ferramenta para garantir que
+                    pessoas gentis tenham mais chances de viver.</p>
+            </div>
+        </div>
+
+        <div class="personagem">
+            <img class="imagem" src="./src/imagens/personagem-nobara-kugisaki.jpg" alt="Personagem Nobara Kugisaki"/>
+            <div class="conteudo">
+                <i class="logo"></i>
+                <h2 class="nome-personagem">Nobara Kugisaki</h2>
+                <p class="descricao">Nobara Kugisaki é uma mulher impetuosa e autoconfiante com uma forte crença
+                    em ser “verdadeira” consigo mesma e tem um caráter inabalável. Ela se orgulha de sua aparência
+                    física, ofendendo-se seriamente com qualquer um que a insultasse ou tentasse bater em seu rosto.</p>
+            </div>
+        </div>
+
+        <div class="personagem">
+            <img class="imagem" src="./src/imagens/personagem-satoru-gojo.jpg" alt="Personagem Satoru Gojo"/>
+            <div class="conteudo">
+                <i class="logo"></i>
+                <h2 class="nome-personagem">Satoru Gojo</h2>
+                <p class="descricao">Gojo era um mestre no combate corpo-a-corpo, sendo um especialista em
+                    diversas artes marciais e conseguindo desferir golpes em pontos vitais de seus inimigos. Dependendo
+                    do nível de seu oponente, utilizar jujutsu nem era necessário, já que suas técnicas de luta já davam
+                    conta do recado.</p>
+            </div>
+        </div>
+
+        <div class="personagem">
+            <img class="imagem" src="./src/imagens/personagem-ryomen-sukuna.jpg" alt="Personagem Ryomen Sukuna"/>
+            <div class="conteudo">
+                <i class="logo"></i>
+                <h2 class="nome-personagem font1">Ryomen Sukuna</h2>
+                <p class="descricao font2">O que se sabe sobre seu passado de forma oficial é que Sukuna era o conhecido
+                    como o Rei das Maldições à cerca de 1000 anos atrás, durante a Era de Ouro da Feitiçaria. Ele era um
+                    demônio impiedoso com uma aparência assustadora, tendo 4 olhos, 4 braços e um sorriso tão medonho
+                    quanto sua psicopatia.</p>
+            </div>
+        </div>
+    </main>
+    <ul class="botoes">
+        <li>
+            <button class="botao selecionado" onclick="personagem()">
+                <img src="./src/imagens/logo-jujutsu-kaisen.jpeg" alt="">
+            </button>
+        </li>
+
+        <li>
+            <button class="botao" onclick="personagem()">
+                <img src="./src/imagens/logo-yuji.jpeg" alt="">
+            </button>
+        </li>
+
+        <li>
+            <button class="botao" onclick="personagem()">
+                <img src="./src/imagens/logo-megumi.jpeg" alt="">
+            </button>
+        </li>
+
+        <li>
+            <button class="botao" onclick="personagem()">
+                <img src="./src/imagens/logo-nobara.jpeg" alt="">
+            </button>
+        </li>
+
+        <li>
+            <button class="botao" onclick="personagem()">
+                <img src="./src/imagens/logo-gojo.jpeg" alt="">
+            </button>
+        </li>
+
+        <li>
+            <button class="botao" onclick="personagem()">
+                <img src="./src/imagens/logo-sukuna.jpeg" alt="">
+            </button>
+        </li>
+    </ul>
+
+    <script src="./src/js/script.js"></script>
+
+</html>
